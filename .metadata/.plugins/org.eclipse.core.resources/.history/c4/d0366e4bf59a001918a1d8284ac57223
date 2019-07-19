@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class TripAdvisor {
+	
+	static String findNumber(List<Integer> arr, int k) {
+
+		if( arr.contains(k) ) return "YES";
+		
+		return "NO";
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);  
+		List<Integer> arr = new ArrayList<Integer>();
+		
+		Integer item ,arrLength ,searchedItem;
+		
+		arrLength = Integer.valueOf( in.nextLine());
+		
+		//Integer[] arr = new Integer[arrLength] ;
+				
+		searchedItem = Integer.valueOf( in.nextLine());
+		
+		for(int i=0 ; i< arrLength ;i++)
+		{
+			//arr[i] =
+			item = Integer.valueOf( in.nextLine());
+			arr.add(item);
+		}
+		
+		return findNumber(arr, searchedItem);
+	}
+
+}
